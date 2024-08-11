@@ -4,19 +4,19 @@ const Schema = mongoose.Schema;
 
 const UserSchema = Schema({
     name: {
-        typeof: String,
-        required: True,
+        type: String,
+        required: true,
     },
     email: {
-        typeof: String,
-        required: True,
-        unique: True,
+        type: String,
+        required: true,
+        unique: true,
     },
     password: {
-        typeof: String,
-        required: True,
+        type: String,
+        required: true,
     }
 })
 
-const UserModel = mongoose.model('users', UserSchema);
-export default UserModel;
+const UserModel = mongoose.model('Users', UserSchema);
+module.export = UserModel;
