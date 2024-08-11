@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const router = require('./Routes/AuthRouter')
+const authRouter = require('./Routes/AuthRouter')
 require('dotenv').config()
 
 // Import MongoDB
@@ -16,7 +16,7 @@ connectMongoDB()
 app.use(bodyParser.json())
 app.use(cors())
 
-app.use('/auth', router)
+app.use('/auth', authRouter)
 
 app.get('', (req, res) => {
    res.send(" server is running ....")
