@@ -3,17 +3,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const InformationSchema = new Schema({
-    Address: {
-        type: string,
-        require: true
+    address: {
+        type: String,
+        required: true
     },
     contact: {
-        type: number,
-        require: true
+        type: Number,
+        required: true
     },
     zipCode: {
-        type: number,
-        require: true
+        type: Number,
+        required: true
     }
 })
 

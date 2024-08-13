@@ -11,7 +11,7 @@ const signupValidation = (req, res, next) => {
 
     if(error){
         return res.status(400)
-            .json({'message': 'Bad Request', error})
+            .json({message: 'Bad Request', error})
     }
     next()
 }
