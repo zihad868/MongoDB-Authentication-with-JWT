@@ -7,7 +7,8 @@ require('dotenv').config()
 
 // Import MongoDB
 const connectMongoDB = require('./Models/db')
-const information = require('./Controllers/InformationControllers')
+// const information = require('./Controllers/InformationControllers')
+const information = require('./Routes/Information')
 
 port = process.env.PORT || 5000;
 
